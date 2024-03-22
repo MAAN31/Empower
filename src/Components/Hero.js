@@ -1,10 +1,11 @@
-"use client";
 import React from "react";
 import { SparklesCore } from "./ui/Sparkles.tsx";
+import { Spotlight } from "./ui/Spotlight.tsx"; // Import the Spotlight component
 
 export function Hero() {
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md relative"> {/* Add relative positioning */}
+      <Spotlight className="absolute top-0 left-1/2 transform -translate-x-1/2 -top-40 md:left-60 md:-top-20" fill="white" /> {/* Add Spotlight component */}
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
         EmpowerU
       </h1>
