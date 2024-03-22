@@ -12,7 +12,9 @@ const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'About Us', href: '#', current: false },
   { name: 'Our mission', href: '#', current: false },
+  { name: 'Our Team', href: '#', current: false },
   { name: 'Contact Us', href: '#', current: false },
+
   
 ];
 
@@ -43,7 +45,7 @@ const Navbar = () => {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src="src/Assets/without line.png"
                     alt="Your Company"
                   />
                 </div>

@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "/Users/apple/Downloads/empower/src/utils/cn.ts";
+import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 
