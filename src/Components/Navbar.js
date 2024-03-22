@@ -7,13 +7,13 @@ import OurMission from './OurMission';
 import OurTeam from './OurTeam';
 import ContactUs from './ContactUs';
 import Newsletter from './Newsletter';
+import webLogo from "../Assets/webLogo.png";
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'About Us', href: '#', current: false },
   { name: 'Our mission', href: '#', current: false },
   { name: 'Contact Us', href: '#', current: false },
-  
 ];
 
 function classNames(...classes) {
@@ -42,8 +42,8 @@ const Navbar = () => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="h-12 w-auto"
+                    src={webLogo}
                     alt="Your Company"
                   />
                 </div>

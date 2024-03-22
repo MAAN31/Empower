@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar';
 import Home from './Components/Hero';
 import AboutUs from './Components/AboutUs';
@@ -17,11 +16,8 @@ function App() {
             <Home />
             <OurMission />
             <AboutUs /> 
-            {/* <OurTeam /> */}
             <ContactUs />
             <Newsletter />
-            {/* Define other routes that you need*/}
-          
     </div>
   );
 }
