@@ -1,9 +1,11 @@
 import React from "react";
-import card from "./card.css";
+import "./card.css";
+import { Col } from "react-bootstrap";
 
 const ResourceCard = ({logo, title, description, url}) =>{
     return(
-        <div className="Resource-Card">
+        <Col sm={6} md={4}>
+            <div className="Resource-Card">
             <img src={logo} alt="Website Name" className="logo"/>
             <div className="info">
                 <h2>{title}</h2>
@@ -13,6 +15,7 @@ const ResourceCard = ({logo, title, description, url}) =>{
                 </a>
             </div>
         </div>
+        </Col>
     )
 }
 export default ResourceCard;
