@@ -9,49 +9,55 @@ const ResourceHub = () =>{
     const sources = [
         {
             logo: logo,
-            title: "Lib1", 
+            title: "Books/e-Books", 
             description: "This is an example resource description.", 
             url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793935"
         },
         {
             logo: logo,
-            title: "Lib2",
+            title: "Business Plan",
             description: "This is an example resource description.",
             url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793935"
         },
         {
             logo: logo,
-            title: "Lib3",
+            title: "Guidance",
             description: "This is an example resource description.",
             url: "https://researchguides.library.yorku.ca/businessplan"
         },
         {
             logo: logo,
-            title: "Lib4",
+            title: "TD",
             description: "This is an example resource description.",
             url: "https://www.td.com/ca/en/business-banking/small-business/starting-your-business/market-research"
         },
         {
             logo: logo,
-            title: "Lib5",
+            title: "Business Research",
             description: "This is an example resource description.",
             url: "https://www.library.yorku.ca/web/bbl/guides/"
         },
         {
             logo: logo,
-            title: "Lib6",
+            title: "International Business",
             description: "This is an example resource description.",
             url: "https://researchguides.library.yorku.ca/countryinternationalbusiness"
         },
         {
             logo: logo,
-            title: "Lib7",
+            title: "Business Data",
             description: "This is an example resource description.",
             url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790882"
         },
         {
             logo: logo,
-            title: "Lib8",
+            title: "Research Guide",
+            description: "This is an example resource description.",
+            url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790881"
+        },
+        {
+            logo: logo,
+            title: "Contact Us",
             description: "This is an example resource description.",
             url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790881"
         }
