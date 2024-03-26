@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function ContactUs() {
+const YourComponent = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src="https://static-bundles.visme.co/forms/vismeforms-embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      // Once the script is loaded, initialize the Visme form
+      window.vismeformsEmbed.init();
+    };
+
+    return () => {
+      // Cleanup: remove the script when the component is unmounted
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <div id="contact">
-      <h2>Contact Us</h2>
-      {/* Your contact us content here */}
-    </div>
+    <div class="visme_d" data-title="Untitled Project" data-url="g7qv6v78-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="50401"></div>
   );
-}
+};
 
-export default ContactUs;
+export default YourComponent;
