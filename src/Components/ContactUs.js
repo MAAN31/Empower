@@ -2,21 +2,25 @@ import React, { useEffect } from 'react';
 
 const YourComponent = () => {
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src="https://static-bundles.visme.co/forms/vismeforms-embed.js";
-    script.async = true;
-    document.body.appendChild(script);
+    const loadScript = async () => {
+      // Create a script element
+      const script = document.createElement("script");
+      script.src = "https://static-bundles.visme.co/forms/vismeforms-embed.js";
+      script.async = true;
 
-    script.onload = () => {
-      // Once the script is loaded, initialize the Visme form
-      window.vismeformsEmbed.init();
+      // Add a callback function to execute after the script is loaded
+      script.onload = () => {
+        // Additional actions after the script is loaded
+        console.log("Script loaded!");
+      };
+
+      // Append the script element to the document body
+      document.body.appendChild(script);
     };
 
-    return () => {
-      // Cleanup: remove the script when the component is unmounted
-      document.body.removeChild(script);
-    };
-  }, []);
+    // Call the async function to load the script
+    loadScript();
+  }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   return (
     <div class="visme_d" data-title="Untitled Project" data-url="g7qv6v78-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="50401"></div>
