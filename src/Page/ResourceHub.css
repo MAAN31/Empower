@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     border-radius: 50px;
-    background: linear-gradient(to bottom right,white -111%, black 39%, #023d65 200%)
+    /* background: black; */
+    /* background: linear-gradient(to bottom right,white -111%, black 39%, #023d65 200%) */
   }
 
   .container{
