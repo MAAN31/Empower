@@ -4,7 +4,7 @@ import Home from './Components/Hero';
 import AboutUs from './Components/AboutUs';
 import OurMission from './Components/OurMission';
 
-// import OurTeam from './Components/OurTeam';
+import OurTeam from './Components/OurTeam';
 import ContactUs from './Components/ContactUs';
 import Newsletter from './Components/Newsletter';
 import Footer from './Components/Footer';
@@ -17,7 +17,7 @@ function App() {
             <Home />
             <OurMission />
             <AboutUs /> 
-            {/* <OurTeam /> */}
+            <OurTeam />
             <ContactUs />
             <Newsletter />
             <Footer />

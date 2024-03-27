@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const YourComponent = () => {
+const ContactUs = () => {
   useEffect(() => {
     const loadScript = async () => {
       // Create a script element
@@ -27,4 +27,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default ContactUs;
