@@ -2,6 +2,10 @@
 import { cn } from "/Users/akulsareen/Desktop/EmpowerU/src/utils/cn.ts";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
+import { Routes, Route, Link } from 'react-router-dom';
+import { lazy } from 'react';
+
+const ResourceHub = lazy( ()=> import("../../Page/ResourceHub"));
 
 const transition = {
   duration: 0,
@@ -28,11 +32,16 @@ export const GeminiEffect = ({
         {description ||
           `Empowerment in Action: Transforming Lives, One Community at a Time`}
       </p>
+      {/* Add route */}
       <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
-        <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
+        <Link to="/resource-hub" className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
           Resource Hub
-        </button>
+        </Link>
       </div>
+      
+        <Routes>
+          <Route path="/resource-hub" element={<ResourceHub />} />
+        </Routes>
       <svg
         width="1440"
         height="890"

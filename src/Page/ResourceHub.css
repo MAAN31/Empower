@@ -22,6 +22,7 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     /* margin: 0 -15px; Adjust margin to offset the negative margin of columns */
   }
   
@@ -85,5 +86,12 @@
   a {
     text-decoration: none;
     color: #007bff; /* Link color */
+  }
+
+  .boldtitle{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5rem;
   }
   
