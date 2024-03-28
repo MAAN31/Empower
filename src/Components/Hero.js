@@ -56,7 +56,7 @@ export function Hero() {
     <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md relative"> {/* Add relative positioning */}
       <Spotlight className="absolute top-0 left-1/2 transform -translate-x-1/2 -top-40 md:left-60 md:-top-20" fill="white" /> {/* Add Spotlight component */}
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-      <h1>{`Empower `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "U", "Youth", "York" ]'><span className="wrap">{text}</span></span></h1>
+      <h1>{`Empower`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "U", "Youth", "York" ]'><span className="wrap">{text}</span></span></h1>
         
       </h1>
       <div className="w-[40rem] h-40 relative">
