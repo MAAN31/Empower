@@ -53,8 +53,8 @@ const testimonials = [
   },
   {
     image: Roodaba,
-    name: "Name : Roodaba",
-    title: "Moby-Dick",
+    name: "Name : Roodaba Mir",
+    title: "Major : BA Law and Society",
   },
   {
     image: Roodaba,
@@ -65,6 +65,11 @@ const testimonials = [
     image: Akul,
     name: "Name: Akul Sareen",
     title: "Major : BSc Computer Science",
+  },
+  {
+    image: Akul,
+    name: "Name: Kainat Naz",
+    title: "Major : BSc Biomedical Science",
   },
 ];
 
