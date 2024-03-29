@@ -10,11 +10,11 @@ import Newsletter from './Newsletter';
 import logo from '../Assets/logo.png'; // Import the logo here
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About Us', href: '#', current: false },
-  { name: 'Our mission', href: '#', current: false },
-  { name: 'Our Team', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
+  { name: 'Home', href: '#Home', current: true },
+  { name: 'About Us', href: '#AboutUs', current: false },
+  { name: 'Our Mission', href: '#OurMission', current: false }, // Fixed typo in href
+  { name: 'Our Team', href: '#OurTeam', current: false },
+  { name: 'Contact Us', href: '#Contact', current: false },
 ];
 
 function classNames(...classes) {

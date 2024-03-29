@@ -2,7 +2,7 @@ import React from 'react';
 
 function Newsletter() {
   return (
-    <div id="newsletter">
+    <div id="Newsletter">
       <h2>Newsletter</h2>
       {/* Your newsletter content here */}
     </div>

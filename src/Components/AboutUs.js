@@ -3,7 +3,7 @@ import { BackgroundGradient } from "./ui/BackgroundGradient.tsx"; // Update the 
 
 export function AboutUsCardDemo() {
   return (
-    <div>
+    <div id="AboutUs">
       <BackgroundGradient className="rounded-lg border border-gray-300 dark:border-gray-700 p-4 sm:p-10 bg-white dark:bg-black ">
 
         <div className="text-center">

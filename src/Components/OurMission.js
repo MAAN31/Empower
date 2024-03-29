@@ -17,7 +17,7 @@ export function OurMission() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.25], [0, 1.2]);
 
   return (
-    <div
+    <div id = "OurMission"
       className="h-[125vh] bg-black w-full  dark:border-white/[0.1] rounded-md relative pt-40 overflow-hidden"
       ref={ref}
     >
