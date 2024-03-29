@@ -107,6 +107,7 @@ export const InfiniteMovingCards = ({
                 src={item.image} // Display image instead of quote
                 alt={item.name} // You can set alt text to the name or anything appropriate
                 className="relative z-20 mt-6"
+                style={{ width: '1260px', height: '310px' }}
               />
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">

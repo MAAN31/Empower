@@ -18,7 +18,7 @@ export function OurMission() {
 
   return (
     <div
-      className="h-[125vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-hidden"
+      className="h-[125vh] bg-black w-full  dark:border-white/[0.1] rounded-md relative pt-40 overflow-hidden"
       ref={ref}
     >
       <GeminiEffect
