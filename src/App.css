@@ -111,175 +111,75 @@ p.danger {
 /* NAVBAR */
 
 /************ About Css ************/
-.aboutus {
-  padding: 0;
-  margin: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact {
+  background-image: black;
+  margin: 1rem;
+  border: bold 1px white;
 }
-
-.aboutus .card {
-  position: relative;
-  width: 70vw;
-  height: 75vh;
-  background-color: #000000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Updated to move content to the top */
-
-  align-items: center;
-  padding: 12px;
-  gap: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  color: white;
-  background-image: linear-gradient(to bottom right, #4A2FBD, #E81CFF);
-}
-
-.aboutus .card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  left: -5px;
-  margin: auto;
-  width: 70vw;
-  height: 65vh;
-  border-radius: 10px;
-  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
-  z-index: -10;
-  pointer-events: none;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.aboutus .card::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  width: 70vw;
-  height: 65vh;
-  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(20px);
-}
-
-.aboutus .card .heading {
-  font-size: 45px;
-  text-transform: capitalize;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 8px;
-}
-
-.aboutus .card p:not(.heading) {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: left;
-  width: 70%;
-}
-
-.aboutus .card p:last-child {
-  color: #e81cff;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-  font-style: italic;
-}
-
-.aboutus .card:hover::after {
-  filter: blur(30px);
-}
-
-.aboutus .card:hover::before {
-  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
-}
-
-/* contactus  */
-/* Contacts */
-
-
-.contact-bg{
-  background-color: rgba(251, 251, 250, 0.3);
-  border: 1px solid black;
-  border-radius: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  position: absolute;
-  height: 60vh;
-  overflow: hidden;
-  
-}
-.customline{
+.contact img {
+  justify-content: space-around;
   width: 50%;
-  background-color: black;
 }
-.logo {
-  max-width: 350px;
-  height: auto;
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.header h2 {
-  font-size: 24px;
-}
-
-
-.input-field {
-  margin-bottom: 15px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-.submit-button {
-  background-color: #007bff;
+.contact form input, .contact form textarea {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
 }
-.submit-button:hover {
-  background-color: #0056b3;
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
 }
-.success-message,
-.error-message {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 14px;
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
 }
-.success-message {
-  color: #28a745;
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
 }
-.error-message {
-  color: #dc3545;
-}
-
-/* main only */
-.main {
-  width: 100%;
-  height: auto;
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
   position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 0.3s ease-in-out;
 }
-
-.overlay {
-  position: relative;
+.contact form button span {
   z-index: 1;
-  background-color: rgba(255, 222, 173, 0.22);
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+}
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
 }
