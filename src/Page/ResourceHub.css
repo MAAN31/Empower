@@ -1,0 +1,98 @@
+.resource-section {
+    padding: 20px 0;
+    position:static;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    /* background: black; */
+    /* background: linear-gradient(to bottom right,white -111%, black 39%, #023d65 200%) */
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    align-items: center;
+    color: white; /* Heading color */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin: 0 -15px; Adjust margin to offset the negative margin of columns */
+  }
+  
+  .col {
+    padding: 0 15px; /* Add padding to each column */
+  }
+  
+  .resource-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid transparent; /* Initially transparent border */
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Added border-color transition */
+    background-color: black; /* Set background color to black */
+  }
+  
+  .resource-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #007bff; /* Highlighted border color on hover */
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: whitesmoke;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+  }
+
+  .boldtitle{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+  }
+  
