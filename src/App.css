@@ -110,68 +110,89 @@ p.danger {
 
 /* NAVBAR */
 
-/************ About Css ************/
+/* *********** About Css *********** */
+
+
 .contact {
-  background-image: black;
+  background-color: #060000;
   margin: 1rem;
-  border: bold 1px white;
+  padding: 2rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align form elements to the right side */
 }
-.contact img {
-  justify-content: space-around;
-  width: 50%;
-}
+
+/* .contact img {
+  width: 100%;
+} */
+
 .contact h2 {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
+  text-align: center;
 }
+
+.contact form {
+  width: 100%;
+    display: flex;
+    margin-top: 0%;
+    justify-content: space-evenly;
+    /* flex-wrap: nowrap; */
+    flex-direction: row-reverse;
+}
+
 .contact form input, .contact form textarea {
-  width: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  margin-bottom: 1rem;
+  padding: 1rem;
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
+  box-sizing: border-box;
 }
+
 .contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
+  box-shadow: 0 0 5px #333;
 }
+
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #333;
 }
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
+
 .contact form button {
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
+  color: #fff;
+  background-color: #333;
+  padding: 1rem 2rem;
   font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
-  position: relative;
+  border-radius: 10px;
   transition: 0.3s ease-in-out;
+  margin-top: 1rem;
+  width: 100%;
 }
+
 .contact form button span {
   z-index: 1;
   position: relative;
 }
+
 .contact form button:hover {
-  color: #fff;
+  background-color: #fff;
+  color: #333;
 }
+
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #333;
   width: 0;
   height: 100%;
   position: absolute;
@@ -180,6 +201,46 @@ p.danger {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button:hover::before {
   width: 100%;
+} 
+
+
+
+
+
+.contact .form-container {
+  float: right;
+  width: calc(50% - 100px);
+  margin-left: -100%;
+}
+
+.contact .form-container h2 {
+  margin-bottom: 20px;
+}
+
+.contact .form-container form input,
+.contact .form-container form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact .form-container form button {
+  width: 100%;
+}
+
+.contact .form-container form .message {
+  margin-top: 20px;
+}
+
+.contact .image-container {
+  float: left;
+  width: 50%;
+  /* margin-right: 30px; */
+}
+
+.contact .image-container img {
+  width: 90%;
+  height: auto;
 }
