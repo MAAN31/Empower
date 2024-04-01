@@ -6,7 +6,7 @@ const Navbar = lazy(() => import("./Components/Navbar"));
 const Home = lazy(() => import("./Components/Hero"));
 const AboutUs = lazy(() => import("./Components/AboutUs"));
 const OurTeam = lazy(() => import("./Components/OurTeam"));
-const ContactUs = lazy(() => import("./Components/ContactUs"));
+const Main = lazy(() => import("./Components/Main"));
 const OurMission = lazy(() => import("./Components/OurMission"));
 const ResourceHub = lazy(() => import("./Page/ResourceHub"));
 const Footer = lazy(() => import("./Components/Footer"));
@@ -25,7 +25,7 @@ function App() {
                 <AboutUs />
                 <OurMission />
                 <OurTeam />
-                <ContactUs />
+                <Main/>
                 <Footer />
               </div>
             }
