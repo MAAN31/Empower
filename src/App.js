@@ -30,7 +30,13 @@ function App() {
               </div>
             }
           />
-          <Route path="/resource-hub" element={<ResourceHub />} />
+          <Route path="/resource-hub" element={
+            <div >
+              <Navbar/>
+              <ResourceHub/>
+              <Footer />
+            </div>
+          } />
         </Routes>
       </Suspense>
     </BrowserRouter>

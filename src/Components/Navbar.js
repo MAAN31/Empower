@@ -14,7 +14,7 @@ const navigation = [
   { name: 'About Us', href: '#AboutUs', current: false },
   { name: 'Our Mission', href: '#OurMission', current: false }, // Fixed typo in href
   { name: 'Our Team', href: '#OurTeam', current: false },
-  { name: 'Contact Us', href: '#Contact', current: false },
+  { name: 'Contact Us', href: '#ContactUs', current: false },
 ];
 
 function classNames(...classes) {
