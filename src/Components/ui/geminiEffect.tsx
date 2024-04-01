@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "/Users/akulsareen/Desktop/EmpowerU/src/utils/cn.ts";
+import { cn } from "/Users/akulsareen/Desktop/Empower/src/utils/cn.ts";
 
 
 

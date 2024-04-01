@@ -1,12 +1,7 @@
 import React from "react";
-
-import ResourceCard from "./ResourceCard";
 import "./ResourceHub.css";
 import { Container, Row, Col } from "react-bootstrap";
-
 import ResourceCard from "./ResourceCard.js";
-import "./ResourceHub.css";
-import { Container, Row, Col } from "react-bootstrap";
 import akul from "../Assets/logo.png";
 
 
@@ -78,8 +73,6 @@ const ResourceHub = () =>{
                     </Col>
                 </Row>
                 <Row>
-
-                    
 
                     {sources.map((source, index) => (
 

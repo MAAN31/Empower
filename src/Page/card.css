@@ -87,7 +87,7 @@
 .button:hover {
   background-color: #7d8480;
 }
-
+.card{
     position: relative;
     width: 190px;
     height: 254px;

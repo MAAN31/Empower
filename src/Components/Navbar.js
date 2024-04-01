@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Home from './Hero';
 import AboutUs from './AboutUs';
@@ -7,9 +7,6 @@ import OurMission from './OurMission';
 import OurTeam from './OurTeam';
 import ContactUs from './ContactUs';
 import Newsletter from './Newsletter';
-
-
-
 import logo from '../Assets/logo.png'; // Import the logo here
 
 const navigation = [
@@ -18,7 +15,6 @@ const navigation = [
   { name: 'Our Mission', href: '#OurMission', current: false }, // Fixed typo in href
   { name: 'Our Team', href: '#OurTeam', current: false },
   { name: 'Contact Us', href: '#ContactUs', current: false },
-
 ];
 
 function classNames(...classes) {
@@ -48,7 +44,7 @@ const Navbar = () => {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-12 w-auto"
-                    src={webLogo}
+                    src={logo} // Fixed variable name
                     alt="Your Company"
                   />
                 </div>
@@ -69,15 +65,8 @@ const Navbar = () => {
                     ))}
                   </div>
                 </div>
-
-              <div className="flex flex-shrink-0 items-center">
-                <img
-                  className="h-24 w-auto relative"
-                  src={logo} // Use the imported logo here
-                  alt="Your Company"
-                />
-
               </div>
+
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
