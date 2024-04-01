@@ -1,13 +1,17 @@
 "use client";
 
-import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts"
+import { cn } from "/Users/akulsareen/Desktop/EmpowerU/src/utils/cn.ts";
+
+
 
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 import { Routes, Route, Link } from 'react-router-dom';
 import { lazy } from 'react';
 
+
 const ResourceHub = lazy( ()=> import("../../Page/ResourceHub.js"));
+
 
 const transition = {
   duration: 0,
