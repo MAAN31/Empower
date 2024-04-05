@@ -1,0 +1,23 @@
+.q-and-a {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.q-and-a h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.q-and-a p {
+    margin-bottom: 0;
+    color: #666666;
+}
+
+.q-and-a img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 15px;
+}

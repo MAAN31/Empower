@@ -25,12 +25,20 @@ function App() {
                 <AboutUs />
                 <OurMission />
                 <OurTeam />
-                <Main/>
+                {/* <Main/> */}
                 <Footer />
               </div>
             }
           />
           <Route path="/resource-hub" element={
+            <div >
+              <Navbar/>
+              <ResourceHub/>
+              <Footer />
+            </div>
+          } />
+
+          <Route path="/OurPortfolio" element={
             <div >
               <Navbar/>
               <ResourceHub/>
