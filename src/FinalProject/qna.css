@@ -7,13 +7,17 @@
 }
 
 .q-and-a h2 {
-    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
     color: #333333;
+    margin-bottom: 10px;
 }
 
 .q-and-a p {
-    margin-bottom: 0;
+    font-size: 16px;
     color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .q-and-a img {

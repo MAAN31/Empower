@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import Portfolio from './FinalProject/Portfolio';
 
 const Navbar = lazy(() => import("./Components/Navbar"));
 const Home = lazy(() => import("./Components/Hero"));
@@ -25,6 +26,7 @@ function App() {
                 <AboutUs />
                 <OurMission />
                 <OurTeam />
+                <Portfolio/>
                 {/* <Main/> */}
                 <Footer />
               </div>

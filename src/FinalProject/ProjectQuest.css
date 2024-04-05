@@ -1,0 +1,29 @@
+.project-quest-container {
+    text-align: center;
+}
+
+.project-quest {
+    font-family: 'Poppins', sans-serif; /* Use any Google Font or custom font you prefer */
+    font-size: 36px;
+    color: #2E3B4E; /* Dark color for better readability */
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+    margin-bottom: 50px; /* Adjust as needed */
+    line-height: 1.5; /* Adjust as needed */
+    letter-spacing: 1px; /* Adjust as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+}
+
+.divider-line-container {
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line {
+    border: none;
+    height: 1px;
+    color: #ffffff;
+    background-color: #ffffff; /* White color for the divider line */
+    width: 80%; /* Adjust as needed */
+    margin: 1px; /* Center the divider line */
+}
