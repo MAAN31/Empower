@@ -1,5 +1,9 @@
 import React from "react";
+import { Routes, Route, Link } from 'react-router-dom'
+import { lazy } from 'react';
 import { BackgroundGradient } from "./ui/BackgroundGradient.tsx"; // Update the import path accordingly
+import OurPortfolio from "../Page/OurPortfolio.js";
+const Portfolio = lazy( ()=> import("../Page/OurPortfolio.js"));
 
 export function AboutUsCardDemo() {
   return (
@@ -14,10 +18,15 @@ export function AboutUsCardDemo() {
           <p className="text-base sm:text-lg text-black mt-2 mb-4 dark:text-neutral-200">
             We're more than just a group of students from York University; we're mentors, innovators, and advocates for a sustainable future. We're here to offer guidance, support, and the resources necessary for young entrepreneurs to thrive. Join us in our journey to empower the youth, one idea at a time, shaping a future where business and sustainability go hand in hand.
           </p>
-          <button className="rounded-full px-4 py-2 text-white flex items-center space-x-1 bg-black mt-4 text-sm font-bold dark:bg-zinc-800">
-            <span>Learn More</span>
-          </button>
+          
+          <Link to="/OurPortfolio" className="rounded-full px-4 py-2 text-white flex items-center space-x-1 bg-black mt-4 text-sm font-bold dark:bg-zinc-800">
+            learn more
+          </Link>
+          
         </div>
+        <Routes>
+          <Route path="/OurPortfolio" element={<OurPortfolio />} />
+        </Routes>
       </BackgroundGradient>
     </div>
   );
