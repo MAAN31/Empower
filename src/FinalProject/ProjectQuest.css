@@ -5,7 +5,7 @@
 .project-quest {
     font-family: 'Poppins', sans-serif; /* Use any Google Font or custom font you prefer */
     font-size: 36px;
-    color: #2E3B4E; /* Dark color for better readability */
+    color: #92b5e9;
     text-align: center;
     margin-top: 50px; /* Adjust as needed */
     margin-bottom: 50px; /* Adjust as needed */
@@ -26,4 +26,10 @@
     background-color: #ffffff; /* White color for the divider line */
     width: 80%; /* Adjust as needed */
     margin: 1px; /* Center the divider line */
+}
+
+.titless{
+    color: #546b8e;
+    margin-top: 5rem;
+    font-size: 100px;
 }

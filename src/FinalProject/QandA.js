@@ -1,12 +1,18 @@
 import React from 'react';
-import "./qna.css";
+import "./qna.css"; // Import your CSS file for QandA component styling
 
 const QandA = ({ question, answer, imageUrl }) => {
     return (
-        <div className="q-and-a">
-            <h2>{question}</h2>
-            <p>{answer}</p>
-            {imageUrl && <img src={imageUrl} alt="Question Image" />}
+        <div className="qna-container">
+            <div className="qna-content">
+                <div className="qna-left">
+                    <img src={imageUrl} alt="QandA Image" className="qna-image" />
+                </div>
+                <div className="qna-right">
+                    <h3>{question}</h3>
+                    <p>{answer}</p>
+                </div>
+            </div>
         </div>
     );
 };

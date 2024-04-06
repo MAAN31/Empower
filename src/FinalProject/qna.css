@@ -1,27 +1,61 @@
-.q-and-a {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.qna-container {
+    background-color: black;
+    border-radius: 20px;
+    margin: 100px;
+    max-height: max-content;
+    border: 1px solid whitesmoke;
+}
+
+.qna-content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    align-items: center;
+}
+
+.qna-left {
+    flex: 0 0 auto; /* Set left column to not grow or shrink */
+     /* Add margin between image and text */
+}
+
+.qna-right {
+    flex: 1; /* Allow right column to grow */
+    text-align: left; /* Align text to the left */
+}
+
+.qna-image {
+    max-width: 300px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 1rem;
+}
+
+.qna-right h3 {
+     /* Remove default margin for heading */
+    text-align: center;
+    font-style: oblique;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.qna-right p {
+    margin: 20px; /* Add margin between question and answer */
+    position: relative;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.portfolio-container {
     padding: 20px;
-    margin-bottom: 20px;
 }
 
-.q-and-a h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 10px;
-}
+@media screen and (max-width: 768px) {
+    .qna-image {
+        max-height: 200px; /* Set a fixed height for the image on smaller screens */
+    }
 
-.q-and-a p {
-    font-size: 16px;
-    color: #666666;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.q-and-a img {
-    max-width: 100%;
-    border-radius: 4px;
-    margin-top: 15px;
+    .qna-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
