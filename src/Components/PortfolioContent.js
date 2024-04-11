@@ -1,5 +1,6 @@
 import React from "react";
 import { StickyScroll } from "./ui/stickyscroll.tsx";
+import triumph from "../Assets/triumph.jpeg"
 
 const content = [
     {
@@ -7,9 +8,15 @@ const content = [
         description:
       "At the core of the Tommy Douglas Secondary School workshop was a strong emphasis on teamwork and collaboration. Right from the project's inception, team members synergized their efforts, brainstorming ideas and refining strategies collectively. This collaborative spirit fostered an environment where diverse perspectives were valued, ensuring that the project was not only comprehensive but also reflective of a broad range of insights.",
         content: (
-          <h2 className="sticky top-0 w-full bg-white text-center py-2 font-bold text-xl z-10">
-            Trials and Triumphs
-          </h2>
+          <div className="h-full w-full  flex items-center justify-center text-white">
+        <img
+          src= {triumph}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
         ),
       },
   {
