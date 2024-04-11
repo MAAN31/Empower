@@ -1,4 +1,4 @@
-import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts";
+import { cn } from "../../utils/cn";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({

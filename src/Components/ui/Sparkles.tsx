@@ -5,7 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, SingleOrMultiple } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts";
+import { cn } from "../../utils/cn";
 
 import { motion, useAnimation } from "framer-motion";
 

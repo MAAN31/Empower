@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
-import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts";
+import { cn } from "../../utils/cn";
 
 export const StickyScroll = ({
   content,

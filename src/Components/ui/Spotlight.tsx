@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts";
+import { cn } from "../../utils/cn";
 
 type SpotlightProps = {
   className?: string;

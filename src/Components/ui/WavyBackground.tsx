@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "/Users/apple/Downloads/Empower-1/src/utils/cn.ts";
+import { cn } from "../../utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 

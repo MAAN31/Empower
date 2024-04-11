@@ -10,6 +10,7 @@ import Portfolio from './FinalProject/Portfolio';
 import OurPortfolio from './Page/OurPortfolio';
 import { PortfolioContent } from './Components/PortfolioContent';
 import { CraftingSolution } from './Components/craftingSolution';
+import ProjectQuest from './Components/ProjectQuest';
 
 const Navbar = lazy(() => import("./Components/Navbar"));
 const Home = lazy(() => import("./Components/Hero"));
@@ -52,6 +53,7 @@ function App() {
             <div className='App' >
               <Navbar/>
               <OurPortfolio/>
+              <ProjectQuest/>
               <CraftingSolution/>
               <PortfolioContent/>
               
