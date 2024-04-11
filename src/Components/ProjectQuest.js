@@ -19,7 +19,7 @@ export function ProjectQuest() {
         {hovered && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{ opacity: 0.5 }}
             exit={{ opacity: 0 }}
             className="h-full w-full absolute inset-0"
           >
@@ -37,16 +37,16 @@ export function ProjectQuest() {
         )}
       </AnimatePresence>
       {/* Radial gradient for the cute fade */}
-      <div className="absolute inset-0 [mask-image:radial-gradient(600px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+      <div className="absolute inset-0 [mask-image:radial-gradient(1px,white,transparent)] bg-black" />
       <div className="text-white max-w-2xl mx-auto mt-8">
-        <p>
+        <p className="text-white max-w-2xl mx-auto mt-3 text-sm leading-5 mb-3;">
         Our group tackled the challenge question by
           brainstorming unique ideas to gain different perspectives. We
           coordinated with our project sponsor Murwan Khogali, a youth
           outreach worker at Healing As One. He provided us with valuable
           insights that guided our quest for a solution to the given challenge.
         </p>
-        <p>
+        <p className="text-white max-w-2xl mx-auto mt-3 text-sm leading-5 mb-3;">
           As a result, one of our group members suggested the idea of a
           workshop that teaches students the basics on how to create a business
           and allows them to create a hypothetical business themselves to help
@@ -60,7 +60,7 @@ export function ProjectQuest() {
           find potential collaborators. We finally landed 2 event sponsors at
           Tommy Douglas.
         </p>
-        <p>
+        <p className="text-white max-w-2xl mx-auto mt-3 text-sm leading-5 mb-3;">
           To prepare for the workshops we coordinated with the school staff to
           set up equipment and event supplies to provide students with a
           platform to engage in entrepreneurial creativity. The Event at Tommy
@@ -70,7 +70,7 @@ export function ProjectQuest() {
           pitch their business solution to an audience and a chance to win a
           prize, a gift basket filled with chips, candy, and drinks.
         </p>
-        <p>
+        <p className="text-white max-w-2xl mx-auto mt-3 text-sm leading-5 mb-3;">
           Alongside our development of a hands-on experiential based workshop
           we also developed a resource hub website so that we could leverage the
           skills of our team members in Computer Science. The website developed
