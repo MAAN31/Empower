@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import { lazy } from 'react';
 import { BackgroundGradient } from "./ui/BackgroundGradient.tsx"; // Update the import path accordingly
 import OurPortfolio from "../Page/OurPortfolio.js";
-const Portfolio = lazy( ()=> import("../Page/OurPortfolio.js"));
+// const Portfolio = lazy( ()=> import("../Page/OurPortfolio.js"));
 
 export function AboutUsCardDemo() {
   return (

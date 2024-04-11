@@ -1,16 +1,21 @@
+
+
+
+
+
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import Portfolio from './FinalProject/Portfolio';
+import OurPortfolio from './Page/OurPortfolio';
 import { PortfolioContent } from './Components/PortfolioContent';
-import { CraftingSolution } from './Components/craftingSolution'; // Corrected component name
-
+import { CraftingSolution } from './Components/craftingSolution';
 
 const Navbar = lazy(() => import("./Components/Navbar"));
 const Home = lazy(() => import("./Components/Hero"));
 const AboutUs = lazy(() => import("./Components/AboutUs"));
 const OurTeam = lazy(() => import("./Components/OurTeam"));
 const Main = lazy(() => import("./Components/Main"));
-// const Portfolio = lazy(() => import("./Components/Portfolio"))
 const OurMission = lazy(() => import("./Components/OurMission"));
 const ResourceHub = lazy(() => import("./Page/ResourceHub"));
 const Footer = lazy(() => import("./Components/Footer"));
@@ -29,7 +34,8 @@ function App() {
                 <AboutUs />
                 <OurMission />
                 <OurTeam />
-                <Main/>
+                <Portfolio/>
+                {/* <Main/> */}
                 <Footer />
               </div>
             }
@@ -41,13 +47,15 @@ function App() {
               <Footer />
             </div>
           } />
+
           <Route path="/OurPortfolio" element={
-            <div className='App'> {/* Apply black background color here */}
+            <div >
               <Navbar/>
               <OurPortfolio/>
-              <CraftingSolution/> {/* Corrected component name and JSX syntax */}
-              <PortfolioContent />
-              <Footer/>
+              <CraftingSolution/>
+              <PortfolioContent/>
+              
+              <Footer />
             </div>
           } />
         </Routes>
