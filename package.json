@@ -13,6 +13,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
     "animate.css": "^4.1.1",
+    "cal-sans": "^1.0.1",
     "clsx": "^2.1.0",
 
     "cors": "^2.8.5",

@@ -1,6 +1,8 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import { PortfolioContent } from './Components/PortfolioContent';
+import { CraftingSolution } from './Components/craftingSolution'; // Corrected component name
 
 
 const Navbar = lazy(() => import("./Components/Navbar"));
@@ -37,6 +39,15 @@ function App() {
               <Navbar/>
               <ResourceHub/>
               <Footer />
+            </div>
+          } />
+          <Route path="/OurPortfolio" element={
+            <div className='App'> {/* Apply black background color here */}
+              <Navbar/>
+              <OurPortfolio/>
+              <CraftingSolution/> {/* Corrected component name and JSX syntax */}
+              <PortfolioContent />
+              <Footer/>
             </div>
           } />
         </Routes>

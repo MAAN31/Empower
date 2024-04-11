@@ -21,7 +21,7 @@ export function CraftingSolution() {
               {item.title}
             </p>
   
-              <div className="text-sm prose prose-sm dark:prose-invert ">
+              <div className="text-sm prose prose-sm dark:prose-invert text-left">
                 {item?.image && (
                  <img
                  src={item.image}
