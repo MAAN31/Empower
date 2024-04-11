@@ -49,7 +49,7 @@ function App() {
           } />
 
           <Route path="/OurPortfolio" element={
-            <div >
+            <div className='App' >
               <Navbar/>
               <OurPortfolio/>
               <CraftingSolution/>
