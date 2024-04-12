@@ -10,6 +10,7 @@ import Douglas from '../Assets/douglas.jpeg'; // Import the logo here
 import Roodaba from '../Assets/Roodaba.jpeg';
 import Akul from '../Assets/akul.jpg';
 import Kainat from "../Assets/Kainat.jpeg";
+import Sheraz from "../Assets/SherazBhai.jpeg";
 
 
 
@@ -59,7 +60,7 @@ const testimonials = [
     title: "Major : BA Law and Society",
   },
   {
-    image: Roodaba,
+    image: Sheraz,
     name: "Name : Sheraz Chaudhary",
     title: "Major : BSc Computer Engineering",
   },
