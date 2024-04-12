@@ -9,6 +9,8 @@ import ben from '../Assets/ben.jpeg'; // Import the logo here
 import Douglas from '../Assets/douglas.jpeg'; // Import the logo here
 import Roodaba from '../Assets/Roodaba.jpeg';
 import Akul from '../Assets/akul.jpg';
+import Kainat from "../Assets/Kainat.jpeg";
+
 
 
 export function OurTeam() {
@@ -67,7 +69,7 @@ const testimonials = [
     title: "Major : BSc Computer Science",
   },
   {
-    image: Akul,
+    image: Kainat,
     name: "Name: Kainat Naz",
     title: "Major : BSc Biomedical Science",
   },

@@ -9,7 +9,8 @@ const navigation = [
   { name: 'Our Mission', href: '#OurMission', current: false },
   { name: 'Our Team', href: '#OurTeam', current: false },
   { name: 'Contact Us', href: '#ContactUs', current: false },
-  { name: "Portfolio", href: '#Portfolio', current: false},
+  //temporary link in there
+  { name: "Portfolio", href: 'http://medleydiaries.com', current: false},
 ];
 
 function classNames(...classes) {
