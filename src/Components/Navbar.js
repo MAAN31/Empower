@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Our Mission', href: '#OurMission', current: false },
   { name: 'Our Team', href: '#OurTeam', current: false },
   { name: 'Contact Us', href: '#ContactUs', current: false },
-  { name: "Portfolio", href: '', current: false},
+  { name: "Portfolio", href: '#Portfolio', current: false},
 ];
 
 function classNames(...classes) {
@@ -38,7 +38,7 @@ const Navbar = () => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-12 w-auto"
+                    className="h-12 w-15"
                     src={logo}
                     alt="Your Company"
                   />
