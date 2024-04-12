@@ -3,13 +3,14 @@ import "./ResourceHub.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ResourceCard from "./ResourceCard.js";
 import akul from "../Assets/logo.png";
+import Books from "../Assets/Books.png";
 
 
 
 const ResourceHub = () =>{
     const sources = [
         {
-            logo: akul,
+            logo: Books,
             title: "Books/e-Books", 
             description: "", 
             url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793935"
