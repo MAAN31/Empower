@@ -8,9 +8,9 @@ const navigation = [
   { name: 'AboutUs', href: '#AboutUs', current: false },
   { name: 'Our Mission', href: '#OurMission', current: false },
   { name: 'Our Team', href: '#OurTeam', current: false },
-  { name: 'Contact Us', href: '#ContactUs', current: false },
+  { name: 'Contact Us', href: 'mailto:EmpowerUC4@outlook.com', current: false },
   //temporary link in there
-  { name: "Portfolio", href: 'http://medleydiaries.com', current: false},
+  { name: "Portfolio", href: 'https://empoweruc4.wixsite.com/empoweru', current: false},
 ];
 
 function classNames(...classes) {

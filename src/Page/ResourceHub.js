@@ -62,7 +62,7 @@ const ResourceHub = () =>{
             logo: akul,
             title: "Our Journey",
             description: "",
-            url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790881"
+            url: "https://empoweruc4.wixsite.com/empoweru"
         },
         {
             logo: Data,
