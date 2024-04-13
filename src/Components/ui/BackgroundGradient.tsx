@@ -1,4 +1,4 @@
-import { cn } from "/Users/akulsareen/Desktop/Empower/src/utils/cn.ts";
+import { cn } from "../../utils/cn.ts";
 import React from "react";
 import { motion } from "framer-motion";
 

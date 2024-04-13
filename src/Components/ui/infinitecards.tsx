@@ -1,7 +1,7 @@
 import { cn } from "../../utils/cn.ts";
 import React, { useEffect, useState } from "react";
 
-export const InfiniteMovingCards = ({
+export const InfiniteCards = ({
   items,
   direction = "left",
   speed = "fast",
@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-950 px-8 py-6 md:w-[450px]"
             style={{
               background:"bg-black",
                 // "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -106,7 +106,7 @@ export const InfiniteMovingCards = ({
               <img
                 src={item.image} // Display image instead of quote
                 alt={item.name} // You can set alt text to the name or anything appropriate
-                className="relative z-20 mt-6 aspect-[1.5/1.3]"
+                className="relative z-20 mt-6 aspect-[1.5/1.1]"
                 // style={{ width: '1260px', height: '310px' }}
               />
               <div className="relative z-20 mt-6 flex flex-row ">

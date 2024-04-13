@@ -1,7 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import Portfolio from './FinalProject/Portfolio';
+import Portfolio from './Components/Portfolio';
+import OurPortfolio from './Page/OurPortfolio';
+import { PortfolioContent } from './Components/PortfolioContent';
+import { CraftingSolution } from './Components/craftingSolution';
+import {ProjectQuest} from './Components/ProjectQuest';
+import Legacy from './Components/legacy';
+import Contribution from './Components/OurTeamContributions';
 
 const Navbar = lazy(() => import("./Components/Navbar"));
 const Home = lazy(() => import("./Components/Hero"));
@@ -26,7 +32,7 @@ function App() {
                 <AboutUs />
                 <OurMission />
                 <OurTeam />
-                <Portfolio/>
+                {/* <Portfolio/> */}
                 {/* <Main/> */}
                 <Footer />
               </div>
@@ -41,9 +47,16 @@ function App() {
           } />
 
           <Route path="/OurPortfolio" element={
-            <div >
+            <div className='App' >
               <Navbar/>
-              <ResourceHub/>
+              <Portfolio/>
+              <ProjectQuest/>
+              <CraftingSolution/>
+              <PortfolioContent/>
+              <Legacy/>
+              <Contribution/>
+
+              
               <Footer />
             </div>
           } />

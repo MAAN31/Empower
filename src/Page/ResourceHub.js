@@ -3,65 +3,73 @@ import "./ResourceHub.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ResourceCard from "./ResourceCard.js";
 import akul from "../Assets/logo.png";
+import Book from "../Assets/Book.png";
+import Plan from "../Assets/Plan.png";
+import Guidance from "../Assets/Guidance.png";
+import TD from "../Assets/TD.png";
+import Research from "../Assets/Reasearch.png";
+import Global from "../Assets/Global.png";
+import Data from "../Assets/Data.png";
+import Toronto from "../Assets/Toronto.png";
 
 
 
 const ResourceHub = () =>{
     const sources = [
         {
-            logo: akul,
-            title: "Books/e-Books", 
-            description: "", 
-            url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793935"
-        },
-        {
-            logo: akul,
+            logo: Plan,
             title: "Business Plan",
             description: "",
-            url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793935"
+            url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793936"
         },
         {
-            logo: akul,
-            title: "Guidance",
-            description: "",
-            url: "https://researchguides.library.yorku.ca/businessplan"
-        },
-        {
-            logo: akul,
+            logo: TD,
             title: "TD",
             description: "",
             url: "https://www.td.com/ca/en/business-banking/small-business/starting-your-business/market-research"
         },
         {
-            logo: akul,
-            title: "Research",
+            logo: Guidance,
+            title: "Guidance",
             description: "",
-            url: "https://www.library.yorku.ca/web/bbl/guides/"
+            url: "https://researchguides.library.yorku.ca/businessplan"
         },
         {
-            logo: akul,
+            logo: Book,
+            title: "Books/e-Books", 
+            description: "", 
+            url: "https://researchguides.library.yorku.ca/c.php?g=679677&p=4793935"
+        },
+        {
+            logo: Global,
             title: "Global Business",
             description: "",
             url: "https://researchguides.library.yorku.ca/countryinternationalbusiness"
         },
         {
+            logo: Research,
+            title: "Research",
+            description: "",
+            url: "https://www.library.yorku.ca/web/bbl/guides/"
+        },
+        {
+            logo: Toronto,
+            title: "Toronto Guide",
+            description: "",
+            url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790881"
+        },
+        {
             logo: akul,
+            title: "Our Journey",
+            description: "",
+            url: "https://empoweruc4.wixsite.com/empoweru"
+        },
+        {
+            logo: Data,
             title: "Business Data",
             description: "",
             url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790882"
         },
-        {
-            logo: akul,
-            title: "Research Guide",
-            description: "",
-            url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790881"
-        },
-        {
-            logo: akul,
-            title: "Contact Us",
-            description: "",
-            url: "https://researchguides.library.yorku.ca/c.php?g=679637&p=4790881"
-        }
     ];
     return(
         <section className="resource-section">

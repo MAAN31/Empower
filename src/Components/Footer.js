@@ -34,8 +34,7 @@ const Footer = () => {
           
         </div>
         <div className="mt-4 flex justify-center"> {/* Adding margin top to separate text */}
-            <p>&copy; 2023 My Website. All rights reserved.</p>
-            <p>Designed and developed by Me</p>
+            <p>&copy; 2024 All rights reserved.</p>
           </div>
     </footer>
   );

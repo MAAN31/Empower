@@ -8,8 +8,9 @@ const navigation = [
   { name: 'AboutUs', href: '#AboutUs', current: false },
   { name: 'Our Mission', href: '#OurMission', current: false },
   { name: 'Our Team', href: '#OurTeam', current: false },
-  { name: 'Contact Us', href: '#ContactUs', current: false },
-  { name: "Portfolio", href: '', current: false},
+  { name: 'Contact Us', href: 'mailto:EmpowerUC4@outlook.com', current: false },
+  //temporary link in there
+  { name: "Portfolio", href: 'https://empoweruc4.wixsite.com/empoweru', current: false},
 ];
 
 function classNames(...classes) {
@@ -38,7 +39,7 @@ const Navbar = () => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-12 w-auto"
+                    className="h-12 w-15"
                     src={logo}
                     alt="Your Company"
                   />
